@@ -104,37 +104,19 @@ body {
 
 
 @media screen and (max-width: 980px) {
-    /* .bodywrapper { 
+    
+    .content, .top-bar {
         width: 100%;
         float: none;
-        display: flex;
-  flex-direction: column; */
-    /* } */
-}
-
-    
-
-@media screen and (max-width: 768px) {
-    .bodywrapper { 
-            width: 100vw;
-            float: none;
-          }
-}
-          
-
-@media screen and (max-width: 640px) {
-    .bodywrapper { 
-            width: 100%;
-            float: none;
     }
 
-    .content, .center-pane, .top-bar, .main-container, .container {
-        width: 100%;
+    .main-container, .center-pane {
+        width: 95%;
         float: none;
     }
 
     .horizontal-bar {
-        width: 100%;
+        width: 95%;
         float: center; 
     }
     
@@ -142,6 +124,60 @@ body {
         flex-direction: column;
         display: inline;
     }
+}
+
+    
+
+@media screen and (max-width: 768px) {
+    
+        .content, .top-bar {
+            width: 100%;
+            float: none;
+        }
+    
+        .main-container, .center-pane {
+            width: 95%;
+            float: none;
+        }
+        
+        .links {
+            flex-direction: column;
+            display: inline;
+        }
+
+        .wraper, .imgtext {  
+            display: flex;
+            flex-direction: column;
+        }
+    
+
+        
+}
+          
+
+@media screen and (max-width: 640px) {
+    
+
+    .content, .top-bar {
+        width: 100%;
+        float: none;
+    }
+
+    .main-container, .center-pane {
+        width: 95%;
+        float: none;
+    }
+    
+
+    .horizontal-bar {
+        width: 95%;
+        float: center; 
+    }
+    
+    /* .links {
+        flex-direction: column;
+        display: inline;
+    } */
 
     .headerstatic {
         position:static
@@ -149,7 +185,30 @@ body {
 
     .wraper, .imgtext {  
         display: flex;
-        flex-direction: column;}
+        flex-direction: column;
+    }
+
+    .links {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+    
+    .links a {
+        display: block;
+    }
+    
+    .my-name {
+        display: block;
+    }
+    
+    .header {
+        overflow: hidden;
+    }
+
+    
 }
 
     
