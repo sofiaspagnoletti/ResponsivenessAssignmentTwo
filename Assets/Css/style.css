@@ -1,0 +1,132 @@
+.header {
+    background-color: white;
+    margin-bottom: 20px;
+    border-color: #cccccc;
+    padding: 10px;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+body {
+    background-image: url("../Images/white-waves.png");
+    background-repeat: repeat;
+
+}
+
+.my-name {
+    display: inline;
+    background-color: #4aaaa5;
+    padding: 10px;
+}
+
+.sub-title {
+    color: #4aaaa5
+}
+
+
+.top-bar {
+    background-color: white;
+}
+.links {
+    display: inline;
+    float: right;
+    color: white;
+}
+.my-pic {
+    padding: 10px;
+    float: left;
+    width: 100px;
+    height:165px;
+}
+.center-pane {
+    width: 960px;
+    float: center;
+    margin: 0 auto;
+    padding: 10px;    
+}
+
+.content {
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  }
+
+
+#msg {
+    width: 90px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #666666;
+    padding: 10px;
+    border: 1px;
+    border-color:#4aaaa5;
+    color: white;
+    font-size: 8px;
+
+  }
+
+  .container {
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    width:400px;
+    height:200px
+  }
+
+  .imgtext {
+      font-size: 12px;
+      background-color: #4aaaa5;
+      color: white;
+      top:90%;
+      width:400px;
+      position: absolute;
+  }
+
+  .wraper {
+      display: flex;
+      padding: 10px;
+  }
+
+  .main-container {
+    margin-right: 20px;
+  }
+
+
+@media screen and (max-width: 980px) {
+    .bodywrapper { 
+        width: 100vw;
+        float: none;
+      }
+    .header {
+        display: flex;
+  flex-direction: column;
+    }
+}
+
+    
+
+@media screen and (max-width: 768px) {
+    .bodywrapper { 
+            width: 100vw;
+            float: none;
+          }
+}
+          
+
+@media screen and (max-width: 640px) {
+    .bodywrapper { 
+            width: 100%;
+            float: none;
+            background-color: salmon;
+          }
+          .headerstatic{
+              position:static}
+}
+  
