@@ -45,6 +45,10 @@ body {
     padding: 10px;    
 }
 
+.horizontal-bar {
+    width: 930px;
+}
+
 .content {
     width: 960px;
     margin: 0 auto;
@@ -100,14 +104,12 @@ body {
 
 
 @media screen and (max-width: 980px) {
-    .bodywrapper { 
-        width: 100vw;
+    /* .bodywrapper { 
+        width: 100%;
         float: none;
-      }
-    .header {
         display: flex;
-  flex-direction: column;
-    }
+  flex-direction: column; */
+    /* } */
 }
 
     
@@ -124,9 +126,31 @@ body {
     .bodywrapper { 
             width: 100%;
             float: none;
-            background-color: salmon;
-          }
-          .headerstatic{
-              position:static}
+    }
+
+    .content, .center-pane, .top-bar, .main-container, .container {
+        width: 100%;
+        float: none;
+    }
+
+    .horizontal-bar {
+        width: 100%;
+        float: center; 
+    }
+    
+    .links {
+        flex-direction: column;
+        display: inline;
+    }
+
+    .headerstatic {
+        position:static
+        }
+
+    .wraper, .imgtext {  
+        display: flex;
+        flex-direction: column;}
 }
+
+    
   
